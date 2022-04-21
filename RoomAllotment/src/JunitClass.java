@@ -45,7 +45,8 @@ class JunitClass {
 			System.out.println("Member Name please !!");
 			String name = input.next();
 			/*
-			 * if(i==memberSize-1) { //3.member name is null name = null;
+			 * if(i==memberSize-1) { //3.member name is null
+			 *  name = null;
 			 * assertNotNull(name); }
 			 */
 			//3.member name is not null
