@@ -12,7 +12,11 @@ class JunitClass {
 		System.out.println("start");
 		Scanner input = new Scanner(System.in);
 		System.out.println("Room counter value");
-		Room.setCounter(input.nextInt());
+		int roomCounter = input.nextInt();
+		Room.setCounter(roomCounter);
+		
+		//4.assert check roomCounter is not less then 0 
+		assertFalse(roomCounter<0);
 	}
 	
 	@Test
@@ -58,6 +62,8 @@ class JunitClass {
 	
 	@AfterAll
 	static void after() {
+		int roomCounter = Room.getCounter();
+		assertTrue(roomCounter!=0);
 		System.out.println("completed");
 	}
 }
