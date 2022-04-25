@@ -1,5 +1,6 @@
+import java.io.Serializable;
 
-public class Member {
+public class Member implements Serializable{
 	private int memberId;
 	private String name;
 	private Room room;
